@@ -170,7 +170,7 @@ class TwoLayerNet(object):
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-            indices = np.random.choice(num_train,size=batch_size,replace=False)
+            indices = np.random.choice(num_train,size=batch_size,replace=True)
             X_batch = np.vstack(X[indices])
             y_batch = y[indices]
 
